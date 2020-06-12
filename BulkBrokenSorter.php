@@ -39,23 +39,7 @@ class BulkBrokenSorter implements SortInterface
            }
         sleep(20);
     }
-
-    public function test() {
-
-        $limit =  10;
-        $offset = 0;
-        while ($offset < 100) {
-            $data = $this->con->query("SELECT * FROM bigfiles ORDER BY registered ASC LIMIT " . $offset . " , " . $limit)
-                ->fetchAll();
-            foreach ($data as $person) {
-                print ("\n".$person['id']);
-            }
-            $offset +=$limit;
-            print ("\n");
-            }
-
-
-    }
+    
 
     public function renderItems(): void
     {
