@@ -9,7 +9,6 @@ require_once __DIR__.'/database.php';
 class BulkBrokenSorter implements SortInterface
 {
     protected $fileName;
-    protected $items;
     protected $con;
 
     public function __construct($fileName)
@@ -39,7 +38,6 @@ class BulkBrokenSorter implements SortInterface
            }
         sleep(20);
     }
-    
 
     public function renderItems(): void
     {
@@ -60,12 +58,7 @@ class BulkBrokenSorter implements SortInterface
             }
             $offset +=$limit;
             sleep(6);
-
-
-
         }
-
-
     }
 }
 
