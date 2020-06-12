@@ -1,4 +1,4 @@
-# Waldo Backend PHP Developer Test
+# Waldo Backend PHP - JSON Sort
 
 ## Please setup the following:
 - Create a database called 'waldo_backend' or you can change it at the database.php
@@ -19,7 +19,7 @@ the standard way is to  use a scheduled task or cron job.
 
 
 ## Estimated Time Completed
-3- hours
-Spent more time in the sorting functionality. JSON Machine only works when iterating the object, but it would exhaust the PHP memory once I use the registered data,
-I use the usual way when dealing bulky data which is storing them in the database by chunks.
-I think this would be ideal to use a NoSQL database, so it is more scalable.
+- 2 hours plus 30 minutes of testing
+- Spent a lot of time with the BulkBrokenSorter::sorting() functionality. JSON Machine only works when iterating the object, but it would exhaust the PHP memory once read the file like using the registered data for the sorting,
+- I also use the usual way when dealing bulky data which is storing them in the database by chunks.
+- Ideally it would be more scalable to a NoSQL database, but due to time constraint and haven't tried any of it yet.
