@@ -24,6 +24,6 @@ I ran it on my local machine it works. It will have a lot of waiting time consid
 
 
 ## Estimated Time Completed
-- 2 hours plus 30 minutes of testing
+- 2 hours plus 1 hour of testing
 - Spent a lot of time with the `BulkBrokenSorter::sorting()` functionality. **JSON Machine only** works when iterating the object, but it would exhaust the PHP memory once read the file like using the registered data for the sorting,
 - It would be more scalable to use NoSQL database, but due to time constraint and haven't tried any of it yet.
